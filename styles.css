@@ -10,9 +10,6 @@ body {
     flex-direction: column; /* Set the main axis as vertical */
 }
 
-
-
-
 .logo {
   font-size: 1.5em;
   font-weight: bold;
@@ -41,19 +38,6 @@ body {
 }
 
 
-#footer #col1,
-#footer #col2,
-#footer #col3{
-	float: left;
-	width: 320px;
-	padding: 0px 120px 0px 120px;
-}
-
-#footer #icon{
-    display: block;
-    margin-bottom: 1em;
-    font-size: 3em;
-}
 
 
  
@@ -223,7 +207,7 @@ img.img-right {
 }
 
 
-@media only screen and (min-width: 601px) {
+@h2-sect only screen and (min-width: 601px) {
   p {
     font-size: 22px;
   }
@@ -293,7 +277,7 @@ img.img-right {
   h2.h2-sect-bg {
     font-size: 32px;
     text-align: center;
-    color: rgb( 247, 181, 0);
+    color:white;
   }
 }
 
@@ -302,9 +286,23 @@ img.img-right {
   h2.h2-sect-bg {
     font-size: 24px;
     text-align: center;
-    color: rgb( 247, 181, 0);
+    color: white;
   }
 }
+
+@media only screen and (min-width: 601px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
 
 .image-container {
 display: flex;
@@ -415,11 +413,9 @@ margin-bottom: 1em;
 font-size: 3em;
 }
 
-#footer #icon{
-display: block;
-margin-bottom: 1em;
-font-size: 3em;
-}
+
+
+
 
 /*** Adding Styles to Copyright Div ***/
 .copyright
@@ -482,11 +478,27 @@ font-family:"Calibri", sans-serif;
     font-size:64px;
     color: white;
     margin-bottom: 20px;
+    text-align: center;
 }
+
+.h1-sect-bg-1{text-indent: 20px;
+  font-size:64px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.h2-sect-bg-1{text-indent: 20px;
+  font-size: 32px;
+  color: rgb( 247, 181, 0);
+  display: block;
+  text-align: left;}
+
 .h2-sect-bg{text-indent: 20px;
     font-size: 32px;
     color: white;
-    display: block;}
+    display: block;
+    text-align: center;}
 
 .p-sect-bg{bottom: 0;
 right: 0;
