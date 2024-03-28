@@ -1,0 +1,388 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles.css">
+	  <style>
+
+section-with-bg {
+      background-image: url('https://github.com/MindTheGap2024/Conference2024/blob/main/Slide1.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      min-height: 200vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color: #333;
+    }
+
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 100vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+    }
+
+
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #8B8000 ;}
+a:hover{color: #8B8000 ;}
+a:active{color: #8B8000 ;}
+
+h2,h3{clear:left; color: #8B8000 ; margin:1.5em 0em 1em 0em;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+
+ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
+ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+h2.h2-session-info{ text-align: center;
+    color: white;
+
+}
+
+speaker-table{
+    width: 100%; /* Ensure the table spans the full width of its container */
+}
+
+
+
+
+.Speaker {
+    width: 30%; /* Set the width of the first cell to 30% */
+}
+
+.speaker-name {
+    width: 70%; /* Set the width of the second cell to 70% */
+}
+
+
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: white; height:32px;}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; }
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+
+
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+ h1.h1-centre{
+    align: center;
+ }
+</style>
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024">Home</a></li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/About">About</a></li>
+    
+            <li>  
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts">Abstracts</a>
+                    <ul>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Matthew-Bradley">Matthew Bradley</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Lorraine-Dennis">Lorraine Dennis</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Rita-Fulco">Rita Fulco</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Marino">Caterina Marino</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Cahal-McLaughlin">Cahal McLaughlin</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sinead-OSullivan">Sinead O’Sullivan</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Aisling-Reid">Aisling Reid</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Resta">Caterina Resta</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Valentina-Surace">Valentina Surace</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Massimo-Villani">Massimo Villani</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Craig-Wallace">Craig Wallace</a></li>
+                        <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Siobahn-Willis">Siobahn Willis</a></li>
+    
+                    </ul>
+                  </li>
+                  <li>  
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts">Speakers</a>
+                      <ul>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Dennis-Speaker">Lorraine Dennis</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Fulco-Speaker">Rita Fulco</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Marino-Speaker">Caterina Marino</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Cahal-Speaker">Cahal McLaughlin</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Sinead-Speaker">Sinead O’Sullivan</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Aisling-Speaker">Aisling Reid</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Spakers#Caterina-Resta-Speaker">Caterina Resta</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Valentina-Speaker">Valentina Surace</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Massimo-Speaker">Massimo Villani</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Craig-Speaker">Craig Wallace</a></li>
+                          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Siobahn-Speaker">Siobahn Willis</a></li>
+      
+                      </ul>
+                    </li>
+            <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog">Conference Programme</a>
+            <ul>
+              <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Morning-Session">Morning Session</a></li>
+              <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
+              <li><a href="Mind_The_Gap_2024_Program.pdf" download>Download Program</a></li>
+         <li><a href="Mind_Gap_2024_Poster.jpg" download>Download Poster</a></li>
+            </ul>
+          </li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link">Zoom Link</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="h1-sect-bg">Mind the Gap 2024</h1>
+    <h2 class="h2-sect-bg">Borders, Limits and Frontiers</h2>
+    <h3 class="h3-sub-head">Speakers</h3>
+  
+  
+    <table id="Bradley-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Matthew Bradley</h3>
+            </td>
+            <td class="speaker-name">
+                unparalleled events at Auschwitz are a metonymy for absolute evil in twentieth century history.
+                    Despite numerous witnesses, 	can we really say that we understand what it entailed?  For Primo Levi
+                    , communication is ‘necessary for a human to be human’. Historians, however, have pointed to the limitations
+                    of description, remarking that ‘there is no good witness, no exact description in all its parts ‘ (M. Bloch).
+                    Philosophy, by contrast, goes further by reflecting on a reality that exceeds the sum of facts: ‘The survivors		
+                    describedsomething that could not be witnessed’ (G. Agamben). Auschwitz deprives us of a possibility that seems
+                   inalienable; that is to say, the capacity to exchange experiences through testimony, as it bears witness
+                   to that which pertains to the Real (J. Lacan), i.e. the unspeakable, the non-symbolisable and de-subjectification.
+                   So, to what extent is it possible to understand Auschwitz? Is it not the case that the events of Auschwitz are always	
+                   indescribable, to a certain extent? The three impossible but indispensable professions indicated by Freud (teaching, governing,
+                   psychoanalysing) can perhaps be supplemented by a fourth: description.
+            </td>
+        </tr>
+    </table>
+
+    <table id="Dennis-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Lorraine Dennis</h3>
+            </td>
+            <td class="speaker-name">
+                Lorraine Dennis Bio 
+            </td>
+        </tr>
+
+    </table>
+
+    <table id="Harkin-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3  class="h3-sub-head">Dennis Harkin</h3>
+            </td>
+            <td class="speaker-name">
+                Dominic Harkin 
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="Fulco-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Rita Fulco</h3>
+            </td>
+            <td class="speaker-name">
+                 unparalleled events at Auschwitz are a metonymy for absolute evil in twentieth century history.
+                    Despite numerous witnesses, 	can we really say that we understand what it entailed?  For Primo Levi
+                    , communication is ‘necessary for a human to be human’. Historians, however, have pointed to the limitations
+                    of description, remarking that ‘there is no good witness, no exact description in all its parts ‘ (M. Bloch).
+                    Philosophy, by contrast, goes further by reflecting on a reality that exceeds the sum of facts: ‘The survivors		
+                    describedsomething that could not be witnessed’ (G. Agamben). Auschwitz deprives us of a possibility that seems
+                   inalienable; that is to say, the capacity to exchange experiences through testimony, as it bears witness
+                   to that which pertains to the Real (J. Lacan), i.e. the unspeakable, the non-symbolisable and de-subjectification.
+                   So, to what extent is it possible to understand Auschwitz? Is it not the case that the events of Auschwitz are always	
+                   indescribable, to a certain extent? The three impossible but indispensable professions indicated by Freud (teaching, governing,
+                   psychoanalysing) can perhaps be supplemented by a fourth: description.
+            </td>
+        </tr>
+
+    </table>
+
+    <table id="Marino-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Caterina Marino</h3>
+            </td>
+            <td class="speaker-name">
+                Caterina Marino Bio
+            </td>
+        </tr>
+
+
+    </table>
+
+    <table id="Mclaughlin-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Cahal Mclaughlin</h3>
+            </td>
+            <td class="speaker-name">
+                Cahal Bio
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="Mclaughlin-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Cahal Mclaughlin</h3>
+            </td>
+            <td class="speaker-name">
+                Cahal Bio
+            </td>
+        </tr>
+    </table>
+
+    <table id="Sinead-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Sinead O'Sullivan</h3>
+            </td>
+            <td class="speaker-name">
+                Sinead Bio
+            </td>
+        </tr>
+    </table>
+
+    <table id="Reid-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Aisling Reid</h3>
+            </td>
+            <td class="speaker-name">
+                Aisling Bio
+            </td>
+        </tr>
+    </table>
+
+    <table id="Caterina-Resta-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Caterina Resta</h3>
+            </td>
+            <td class="speaker-name">
+                Caterina Resta Bio
+            </td>
+        </tr>
+    </table>
+
+    <table id="Valentina-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Valentina Surace</h3>
+            </td>
+            <td class="speaker-name">
+                Valentina Surace Bio
+            </td>
+        </tr>
+    </table>
+
+    <table id="Massimo-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Massimo Villani</h3>
+            </td>
+            <td class="speaker-name">
+                Massimo Bio
+            </td>
+        </tr>
+    </table>
+
+    <table id="Craig-Speaker" class="speaker-table">
+        <tr>
+            <td class="Speaker" rowspan="3">
+                <h3 class="h3-sub-head">Craig Wallace</h3>
+            </td>
+            <td class="speaker-name">
+                Craig Wallace Bio
+            </td>
+        </tr>
+    </table>
+
+
+
+    <footer id="footer">
+
+        
+        <div class="copyright">
+            <p></p>
+ 
+            <ul class="contact">
+                <li>
+			<a href="https://www.qub.ac.uk">
+                    		<img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100" alt="QUB">
+			</a>
+
+                </li>
+ 
+                <li>
+		  <a href="https://international.unime.it">
+                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Messina_uni_icon.png?raw=true" height="100" width="100" alt="Messian">
+                    </a>
+                </li>
+            </a>
+ 
+                <li>
+		  <a href="https://archivio.unime.it/it/centri/cesmis">
+                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100" alt="Simbola">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+
+
+
+</html>
