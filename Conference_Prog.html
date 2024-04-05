@@ -8,6 +8,13 @@
 	<link rel="stylesheet" href="styles.css">
 	  <style>
 
+footer {
+  background-color: #333; /* Set background color */
+  padding: 30px; /* Add padding to create space around the icons */
+  text-align: center; /* Center-align the icons */
+  border-bottom: 50px;
+}
+
 section-with-bg {
       background-image: url('https://github.com/MindTheGap2024/Conference2024/blob/main/Slide1.jpeg?raw=true');
       background-size: cover;
@@ -40,8 +47,7 @@ h3{font-size:1.67em;}
 h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
 
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
 sup{
@@ -72,7 +78,6 @@ h2.h2-session-info{ text-align: center;
 
 }
 
-
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
@@ -96,13 +101,25 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
  h1.h1-centre{
     align: center;
  }
+
+ .navbar {
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  vh:100px;
+ }
+
+ ul.special-items li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
 </style>
 
-
-
 </head>
-
-
 
 <body>
 <section>
@@ -111,7 +128,7 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
         <ul>
           <li><a href="https://mindthegap2024.github.io/MindTheGap2024">Home</a></li>
           <li><a href="https://mindthegap2024.github.io/MindTheGap2024/About">About</a></li>
-    
+      
             <li>  
                   <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts">Abstracts</a>
                     <ul>
@@ -128,7 +145,7 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
                         <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Massimo-Villani">Massimo Villani</a></li>
                         <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Craig-Wallace">Craig Wallace</a></li>
                         <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Siobahn-Willis">Siobahn Willis</a></li>
-    
+      
                     </ul>
                   </li>
                   <li>  
@@ -154,177 +171,191 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
             <ul>
               <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Morning-Session">Morning Session</a></li>
               <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
-              <li><a href="Mind_The_Gap_2024_Program.pdf" download>Download Program</a></li>
-         <li><a href="Mind_Gap_2024_Poster.jpg" download>Download Poster</a></li>
+              <li><a href="Final_Program.pdf" download>Download Program</a></li>
+         <li><a href="Final_Poster.pdf" download>Download Poster</a></li>
             </ul>
           </li>
           <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link">Zoom Link</a></li>
         </ul>
-    </nav>
+      </nav>
 
 
   <h1 class="h1-sect-bg">Mind the Gap 2024</h1>
+
   <h2 class="h2-sect-bg">Borders, Limits and Frontiers</h2>
-  <h3 class="h3-sub-head">Conference Programme</h3>
-  <h2 class="h3-sub-head"><a id="Morning-Session">Morning Session</a></h3>
-  <h3 class="h3-sub-head">Panel 1: 8:45-10:15(London) / 9:45-11:15(Rome)</h3>
-  <h3 class="h3-sub-head"> Chair: Giuliana Gregorio((Universita degli Studi Messina))</h3>
 
+  <h2 class="h2-sect-bg"><a id="Morning-Session">Morning Session</a></h2>
 
+  <hr>
+
+  <h3 class="h3-sub-head">Panel 1: 8:45-10:15 (London) / 9:45-11:15(Rome)</h3>
+  <h3 class="h3-sub-head">Chair: Giuliana Gregorio (University of Messina)</h3>
+
+  <hr>
 
   <table id="Caterina-Resta">
       <tr>
           <td class="date" rowspan="3">
-              8:45 am 
+              8:45 
           </td>
           <td class="title">
-              Caterina Title
+            Caterina Resta (University of Messina)
           </td>
       </tr>
       <tr>
           <td class="speaker">
-            Caterina Resta (Universita degli Studi Messina)
+            <i>Walled Borders. Beyond Immunitary Politics.</i>
           </td>
       </tr>
-      <tr>
-          <td class="abstract">
-             Caterina Abstract
-          </td>
-      </tr>
+
   </table>
 
   <table id="Qub-Speaker-1">
       <tr>
           <td class="date" rowspan="3">
-              9:15am
+              9:05
           </td>
           <td class="title">
-              Queens University belfast title talk 
+              Aisling Reid (Queen’s University Belfast)
           </td>
       </tr>
       <tr>
           <td class="speaker">
-              QUb Speaker
+              <i>Explo '71: Cultural Politics and the Fiftieth Anniversary of the Irish Border
+              </i>
           </td>
       </tr>
-      <tr>
-          <td class="abstract">
-              QUB Abstract
-          </td>
-      </tr>
+
   </table>
 
   <table id="Rita-Fulco">
       <tr>
           <td class="date" rowspan="3">
-              9:45am
+              9:25
           </td>
           <td class="title">
-              Rita Paper Title
+            Rita Fulco (University of Messina)
           </td>
       </tr>
       <tr>
           <td class="speaker">
-              Rita Fulco((Universita degli Studi Messina))
+            <i>Borders and Neo-Nationalism. A Geo-Philisophical Approach.</i>
           </td>
       </tr>
-      <tr>
-          <td class="abstract">
-             Rita Abstract
-          </td>
-      </tr>
+
+
   </table>
 
 
-  <table id="Discussion-">
+  <table id="Lorraine-Dennis">
     <tr>
         <td class="date" rowspan="3">
-            10:15am
+            10:45
         </td>
         <td class="title">
-            Discussion
+            Lorraine Dennis (Queen’s University Belfast)
         </td>
     </tr>
     <tr>
         <td class="speaker">
-            Discussion
+            Lorraine Title
         </td>
     </tr>
 
 </table>
 
-  <br>
-  <h3 class="h3-sub-head">Panel 2: 10:30-12:00(London) / 11:30-13:00(Rome)</h3>
-  <h3 class="h3-sub-head"> Chair: Caterina Resta (Universita degli Studi Messina)</h3>
+<table id="Discussion-1">
+    <tr>
+        <td class="date" rowspan="3">
+            11:05
+        </td>
+        <td class="title">
+            Discussion
+        </td>
+    </tr>
+
+
+</table>
+
+<hr>
+
+  <h3 class="h3-sub-head">Panel 2: 10:30-12:00 (London) / 11:30-13:00 (Rome)</h3>
+  <h3 class="h3-sub-head"> Chair: Craig Wallace (Queen’s University Belfast)</h3>
+
+  <hr>
 
   <table id="Sandro-Gorgone">
     <tr>
         <td class="date" rowspan="3">
-            10:30 am
+            11:30
         </td>
         <td class="title">
-            Sandro Paper Title
+            Sandro Gorgone (University of Messina)
         </td>
     </tr>
     <tr>
         <td class="speaker">
-            Sandro Gorgone((Universita degli Studi Messina))
+            <i>Liminal Places and not-Places</i>
         </td>
     </tr>
-    <tr>
-        <td class="abstract">
-           Sandro Abstract
-        </td>
-    </tr>
+
 </table>
 
-<table id="Aisling-Reid">
+<table id="Massimo-Villani">
     <tr>
         <td class="date" rowspan="3">
-            11:00 am
+            11:50
         </td>
         <td class="title">
-            Dr. Aisling Reid Paper Title
+            Messimo Villani (University of Salerno)
         </td>
     </tr>
     <tr>
         <td class="speaker">
-            Dr. Aisling Reid ((Queens University Belfast))
+            Cum-Finis. <i>Our Present Between Indeterminacy and Infinity.</i>
         </td>
     </tr>
-    <tr>
-        <td class="abstract">
-           Aisling Abstract
-        </td>
-    </tr>
+
 </table>
 
-  <table id="Universita-Messina-2">
+  <table id="Sinead-O">
       <tr>
           <td class="date" rowspan="3">
-              11:30 am
+              12:10
           </td>
           <td class="title">
-            Universita degli Studi Messina Title
-              
+            Sinead O'Sullivan (Queen’s University Belfast)
           </td>
       </tr>
       <tr>
           <td class="speaker">
-            Universita degli Studi Messina Speaker
+            Title
           </td>
       </tr>
-      <tr>
-          <td class="abstract">
-            Universita degli Studi Messina Abstract
-          </td>
-      </tr>
+
   </table>
+
+  <table id="Matthew-Bradley">
+    <tr>
+        <td class="date" rowspan="3">
+            12:30 am
+        </td>
+        <td class="title">
+          <b>Flash Presentation</b> Matthew Bradley (Queen’s University Belfast)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+          <i>"Thou wenest Ich be a Beggere”</i> Borders and the Habitus in Lste Medieval English Romance
+        </td>
+    </tr>
+
+</table>
 
   <table id="Discussion-2">
     <tr>
         <td class="date" rowspan="3">
-            12:00am
+            12:50
         </td>
         <td class="title">
             Discussion
@@ -337,101 +368,165 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
     </tr>
 
 </table>
+
+<hr>
 
   <h3 class="h3-sub-head">Lunch Break: 12:00-14:00 (London) / 13:00-15:00 (Rome) </h3>
   <br>
   <h2 class="h2-session-info"><a id="Afternoon-Session">Afternoon Session</a></h2>
-  <br>
+
+  <hr>
 
   <h3 class="h3-sub-head">Panel 3: 14:00-15:30(London) / 15:00-16:30(Rome)</h3>
-  <h3 class="h3-sub-head"> Chair: </h3>
-
-  <table id="Discussion-3">
-    <tr>
-        <td class="date" rowspan="3">
-            15:30 am
-        </td>
-        <td class="title">
-            Discussion
-        </td>
-    </tr>
-    <tr>
-        <td class="speaker">
-            Discussion
-        </td>
-    </tr>
-</table>
-
-  <h3 class="h3-sub-head">Panel 3: 16:30-18:00(London) / 17:30-19:00(Rome)</h3>
-  <h3 class="h3-sub-head"> Chair: Sandro Gorgone (Universita degli Studi Messina)</h3>
-  <br>
+  <h3 class="h3-sub-head"> Chair: Caterina Resta (University of Messina)</h3>
 
   <table id="Caterina-Marino">
-      <tr>
-          <td class="date" rowspan="3">
-              16:30pm
-          </td>
-          <td class="title">
-            Caterine Marino Title
-          </td>
-      </tr>
-      <tr>
-          <td class="speaker">
-              Caterine Marino (Universitia della Calabria)
-          </td>
-      </tr>
-      <tr>
-          <td class="abstract">
-            Caterine Marino Abstract
-          </td>
-      </tr>
-  </table>
-
-  <table id="Valentine-Surace">
-      <tr>
-          <td class="date" rowspan="3">
-              17:00 
-          </td>
-          <td class="title">
-            Valentina Surace Title
-          </td>
-      </tr>
-      <tr>
-          <td class="speaker">
-              Valentina Surace (Universita degli Studi Messina) 
-          </td>
-      </tr>
-      <tr>
-          <td class="abstract">
-            Valentina Surace Abstract
-          </td>
-      </tr>
-  </table>
-
-  <table id="17:30-Talk">
     <tr>
         <td class="date" rowspan="3">
-            17:30 am
+            14:00
         </td>
         <td class="title">
-            Universita degli Studi Messina Title
+            Caterina Marino (University of Messina)
         </td>
     </tr>
     <tr>
         <td class="speaker">
-            Rita Fulco((Universita degli Studi Messina))
+            <i>Title</i>
+        </td>
+    </tr>
+</table>
+
+<table id="Valentina-Surace">
+    <tr>
+        <td class="date" rowspan="3">
+            14:20
+        </td>
+        <td class="title">
+            Valentina Surace (University of Messina)
         </td>
     </tr>
     <tr>
-        <td class="abstract">
-            Universita degli Studi Messina Title        </td>
+        <td class="speaker">
+            <i>Bordering as the Weak Breaking Force of Border Subjects</i>
+        </td>
     </tr>
 </table>
+
+<table id="Cahal-McLaughlin">
+    <tr>
+        <td class="date" rowspan="3">
+            14:40
+        </td>
+        <td class="title">
+            <b>Pre-Recorded Presentation</b> Cahal McLaughlin and Sioban Willis (Queen’s University Belfast)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+            <i>Title</i>
+        </td>
+    </tr>
+</table>
+
+
+<table id="Discussion-3">
+    <tr>
+        <td class="date" rowspan="3">
+            15:00
+        </td>
+        <td class="title">
+            Discussion       
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+  <h3 class="h3-sub-head">Panel 3: 16:30-18:00(London) / 17:30-19:00(Rome)</h3>
+  <h3 class="h3-sub-head"> Chair: Sandro Gorgone (University of Messina)</h3>
+
+  <hr>
+
+  <table id="Giuliana-Gregorio">
+      <tr>
+          <td class="date" rowspan="3">
+              16:30
+          </td>
+          <td class="title">
+            Giuliana Gregorio (University of Messina)
+          </td>
+      </tr>
+      <tr>
+          <td class="speaker">
+            <i>Borders and Language: Hermeneutic-Philosophical Issues</i>
+          </td>
+      </tr>
+
+  </table>
+
+  <table id="Craig-Wallace">
+      <tr>
+          <td class="date" rowspan="3">
+              16:50 
+          </td>
+          <td class="title">
+            Craig Wallace (Queen’s University Belfast)
+          </td>
+      </tr>
+      <tr>
+          <td class="speaker">
+              <i>Porous Borders, mise-en-scene and mise-en-abyme in Alan Moore's Jerusalem</i>
+          </td>
+      </tr>
+
+  </table>
+
+  <table id="Dominic-Harkin">
+    <tr>
+        <td class="date" rowspan="3">
+            17:10 
+        </td>
+        <td class="title">
+          <b>Flash Presentation</b> Dominic Harkin (Queen’s University Belfast)
+        </td>
+    </tr>
+    <tr>
+        <td class="speaker">
+            <i>Funes the Arboreus: Border(less) Ecologies in Borges' Ficciones</i>
+        </td>
+    </tr>
+
+</table>
+
+
+<table id="Discussion-4">
+    <tr>
+        <td class="date" rowspan="3">
+            17:30
+        </td>
+        <td class="title">
+            Discussion       
+        </td>
+    </tr>
+</table>
+
+<table id="Discussion-5">
+    <tr>
+        <td class="date" rowspan="3">
+            15:30
+        </td>
+        <td class="title">
+            <b>Closing Remarks</b> Aisling Reid and Valentina Surace       
+        </td>
+    </tr>
+</table>
+
+<hr>
 
 </section>
 <section>    
 
-	<img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Slide1.jpeg?raw=true" width="720" height="420" style="padding:10px;">
+	<img src="http://github.com/MindTheGap2024/Conference2024/blob/main/Slide2.jpeg?raw=true" width="720" height="420" style="padding:10px" >
 	<br>
 	<img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Slide2.jpeg?raw=true" width="720" height="420" style="padding:10px;">
 
@@ -439,39 +534,44 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
     <a href="https://linkdoctor.io/wp-content/uploads/2021/10/LD_Logo.png">Click to Download</a>
   </div>
 
-
-
 </section>
 
+<div>
+
     <footer id="footer">
-
-        
-        <div class="copyright">
-            <p></p>
- 
-            <ul class="contact">
-                <li>
-			<a href="https://www.qub.ac.uk">
-                    		<img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100" alt="QUB">
-			</a>
-
-                </li>
- 
-                <li>
-		  <a href="https://international.unime.it">
-                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Messina_uni_icon.png?raw=true" height="100" width="100" alt="Messian">
-                    </a>
-                </li>
+      <div class="copyright">
+        <!-- First row for icons -->
+        <ul class="contact">
+          <li>
+            <a href="https://www.qub.ac.uk">
+              <img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" height="100" width="100" alt="QUB Icon">
             </a>
- 
-                <li>
-		  <a href="https://archivio.unime.it/it/centri/cesmis">
-                    <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100" alt="Simbola">
-                    </a>
-                </li>
-            </ul>
-        </div>
+          </li>
+    
+          <li>
+            <a href="https://international.unime.it">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlBt2j2OwlmmkVUqFX5jeXbVPx0S1u80kX-lncOtz1A&s" height="100" width="100" alt="Messina Icon">
+            </a>
+          </li>
+    
+          <li>
+            <a href="https://archivio.unime.it/it/centri/cesmis">
+              <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" height="100" width="100" alt="Simbola icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+        <!-- Second row for labels -->
+        <ul class="label-row">
+          <li>Faculty Research Initiatives Fund (QUB)</li>
+          <li>Università degli Studi di Messina Dipartimento di Civilità Antiche e Moderne</li>
+          <li>Centro Europeo di Studi su Mito e Simbolo</li>
+        </ul>
+      </div>
     </footer>
+    
+  </div>
 
 
 </body>
