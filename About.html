@@ -9,7 +9,7 @@
     <style>
 
 p.p-img-right{font-size: 20px;
-			text-align: left;
+			text-align: center;
 			margin-bottom: 1em;
 			margin-left: 1em;
       left: 0;
@@ -17,6 +17,133 @@ p.p-img-right{font-size: 20px;
       line-height: 1.5;
       font-family:"Calibri", sans-serif;
 		}
+
+    footer {
+  background-color: #333; /* Set background color */
+  padding: 30px; /* Add padding to create space around the icons */
+  text-align: center; /* Center-align the icons */
+  border-bottom: 50px;
+}
+
+section-with-bg {
+      background-image: url('https://github.com/MindTheGap2024/Conference2024/blob/main/Slide1.jpeg?raw=true');
+      background-size: cover;
+      background-position: center;
+      min-height: 200vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color: #333;
+    }
+
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 100vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+    }
+
+
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #8B8000 ;}
+a:hover{color: #8B8000 ;}
+a:active{color: #8B8000 ;}
+
+
+
+
+h2,h3{clear:left; color: #8B8000 ; margin:1.5em 0em 1em 0em;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+
+
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+h2.h2-session-info{ text-align: center;
+    color: white;
+
+}
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: white; height:32px; text-align: center;}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; }
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px; text-align: center;}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px; text-align: center;}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+
+
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+ h1.h1-centre{
+    align: center;
+ }
+
+ .navbar {
+  background-color: #333;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  vh:100px;
+ }
+
+ ul.special-items li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.center-a{
+    text-align: center;
+    font-size: 20px;
+}
+
+.h2-sect-bg-about{
+  font-size: 32px;
+  color: rgb( 247, 181, 0);
+  display: block;
+  text-align: center;}
 
     </style>
   </head>
@@ -33,6 +160,7 @@ p.p-img-right{font-size: 20px;
                     <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Lorraine-Dennis">Lorraine Dennis</a></li>
                     <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
                     <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Rita-Fulco">Rita Fulco</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Gorgone">Sandro Gorgone</a></li>
                     <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Marino">Caterina Marino</a></li>
                     <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Cahal-McLaughlin">Cahal McLaughlin</a></li>
                     <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sinead-OSullivan">Sinead O’Sullivan</a></li>
@@ -50,8 +178,9 @@ p.p-img-right{font-size: 20px;
                   <ul>
                       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
                       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Dennis-Speaker">Lorraine Dennis</a></li>
-                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
                       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Fulco-Speaker">Rita Fulco</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
+                      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
                       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Marino-Speaker">Caterina Marino</a></li>
                       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Cahal-Speaker">Cahal McLaughlin</a></li>
                       <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Sinead-Speaker">Sinead O’Sullivan</a></li>
@@ -78,90 +207,115 @@ p.p-img-right{font-size: 20px;
 
   <body>
 
-
-
-
-
 <section class="section-abstract">
 	
 <h1 class="h1-sect-bg">Mind the Gap 2024</h1>
 
 <h2 class="h2-sect-bg">Borders, Limits and Frontiers</h2>
-<h3 class="h3-sub-head">About</h3>
+<h2 class="h2-sect-bg">About</h2>
 
-<div class="image-left">
-    <img src="https://static.dw.com/image/51081146_905.jpg" class="img-left">
-</div>
+</section>
 
-<h2 class="h2-img-left">Conference Programme</h2>
-		<p class="p-img-left">Explore border studies through our conference's detailed<br></p>
-		<p class="p-img-left">programme. Engage with expert insights on the modern<br></p>
-		<p class="p-img-left">implications of borders. Click here to view the programme</p>
-		<br>
-		<br>
-		
-		<button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog'">Conference Programme</button>
-    <a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog"></a>
+<table id="Matthew-Bradley">
+	<tr>
+		<td class="speaker">
+			<b><h2 class="h2-sect-bg-about">Conference Programme</h2></b>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">
+      Explore border studies through our conference's detailed programme. Engage with expert insights on the modern implications of borders. Click here to view the programme
+		</td>
+	</tr>
 
-    </section>
+	<tr>
+		<td class="abstract">	<button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog'">Conference Programme</button>
+      <a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog"></a>
+		</td>
+	</tr>
+</table>
 
-  <section class="section-abstract">
-    <div class="image-right">
-	    <img src="https://media.npr.org/assets/img/2023/07/19/ap23200064578219_wide-51b327c5c57db3b72245dca4e6e0ce013c15bc17-s1400-c100.jpg" alt= "Imgage 1" class="img-right">
-	  </div>
-      <h2 class="h2-img-right">Abstracts</h2>
-		  <p class="p-img-right">Discover the speaker abstracts.</p>    
+<table id="Matthew-Bradley">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h2-sect-bg-about">Abstracts</h2>
+		</td>
+	</tr>
+  <tr>
+		<td class="title">Discover the Speaker Abstracts
+		</td>
+	</tr>
+	<tr>
+		<td class="abstract">		      
 			<button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Abstracts'">Abstracts</button>
       <a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts"></a>
+		</td>
+	</tr>
 
-</section>
+</table>
 
-<section class="section-abstract">
+<table id="Matthew-Bradley">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h2-sect-bg-about">Join Online Via Zoom</h2>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">	Secure your spot for the conference and obtain the Zoom link by registering. Click here for registration and Zoom access.</p>   
+		</td>
+	</tr>
 
-<div class="image-left">
-	<img src="https://github.com/MindTheGap2024/MindTheGap2024/blob/main/Image_2.jpg?raw=true" alt="Image 2" class="img-left">
-</div>
-
-    <h2 class="h2-img-left"> Join Online via Zoom</h2>
-		<p class="p-img-left">Secure your spot for the conference and obtain the Zoom link</p>
-		<p class="p-img-left">by registering. Click here for registration and Zoom access.</p>
-		
-			<button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link'">Zoom Link</button>
+	<tr>
+		<td class="abstract">	  <button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link'">Zoom Link</button>
       <a href="https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link"></a>
+		</td>
+	</tr>
+</table>
 
-<br>
-<br>
-</section>
+<table id="Matthew-Bradley">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h2-sect-bg-about">Speakers</h2>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">Find out about our Speakers</p>   
 
-<section>
+		</td>
+	</tr>
 
-<div class="image-right">
-	<img src="https://ichef.bbci.co.uk/news/1024/branded_news/7819/production/_105854703_gettyimages-646141048.jpg" alt="Image 2" class="img-left">
-</div>
-
-    <h2 class="h2-img-right"> Speakers</h2>
-		<p class="p-img-right">Discover information about our speakers</p>
-		
-			<button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Speakers'">Speakers</button>
+	<tr>
+		<td class="abstract">	  			<button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Speakers'">Speakers</button>
       <a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers"></a>
+		</td>
+	</tr>
+</table>
 
-<br>
-<br>
-</section>
+<table id="Matthew-Bradley">
+	<tr>
+		<td class="speaker">
+			<b><h3 class="h2-sect-bg-about">Organising Committee</h2>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">Aisling Reid<br>
+      Valentina Surace
 
-<section class="section-abstract">
+		</td>
+	</tr>
 
-<div class="image-left">
-	<img src="https://www.english-heritage.org.uk/siteassets/home/visit/places-to-visit/hadrians-wall/history/hadrians-wall-1.jpg?w=1440&h=612&mode=crop&scale=both&quality=100&anchor=NoFocus&WebsiteVersion=20240220070057" alt="Hadrians Wall" class="img-right">
-	<div>
+	<tr>
+		<td class="abstract">	  			<button class="btn" onclick="window.location.href='https://mindthegap2024.github.io/MindTheGap2024/Speakers'">Speakers</button>
+      <a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers"></a>
+		</td>
+	</tr>
+</table>
 
-<h2 class="h2-img-left">Organising Committee</h2>
-		<p class="p-img-left">  Aisling Reid</p>
-		<p class="p-img-left">  Valentina Surace</p>
-	</div>
-</div>
 
-</section>
+
+
+
+
 
 	<br>
   <div>
@@ -204,3 +358,4 @@ p.p-img-right{font-size: 20px;
   </body>
 
 </html>
+
